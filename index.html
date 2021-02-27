@@ -37,6 +37,8 @@
     </head>
     
     <body>
+        <div id="box_anim"></div>
+        
         <div id="texto_esquerda" class="texto">criatividade • lifelab • criatividade • lifelab • criatividade • lifelab • criatividade • lifelab • criatividade • lifelab • criatividade • lifelab • criatividade </div>
         <div id="texto_direita" class="texto">2021 • ESPM POA • 2021 • ESPM POA • 2021 </div>
         
@@ -58,7 +60,7 @@
             <div class="capitulo subtitulo">capítulo 1</div>
             <div class="img"></div>
             <div class="titulo">jogando a <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;caixa fora</div>
-            <div class="botao texto">ler página</div>
+            <div class="botao texto" onclick="abrir('cap1.html')">ler página</div>
         </div>
         
         <div class="post invertido aguardando" id="post_2">
@@ -72,3 +74,24 @@
         
     </body>
 </html>
+
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('box_anim').style.opacity = '0';
+
+        setTimeout(function(){
+            document.getElementById('box_anim').style.display = 'none';
+        },500);
+    }
+    
+    function abrir(lLink) {
+        document.getElementById('box_anim').style.display = 'block';
+        
+        setTimeout(function(){
+            document.getElementById('box_anim').style.opacity = '1';
+            setTimeout(function(){
+                document.location.href = lLink;
+            },500)
+        }, 10);
+    }
+</script>
