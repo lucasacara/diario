@@ -1,6 +1,6 @@
 @font-face { 
   font-family: 'Autography';
-  src: url('file:../fonts/Autography.ttf') format('truetype');
+  src: url('../fonts/Autography.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
