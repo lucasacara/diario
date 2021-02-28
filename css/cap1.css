@@ -9,6 +9,7 @@ html, body{
     border: none;
     margin: 0;
     background-color: #fbdd76;
+    overflow-x: hidden;
 }
 
 .texto{
@@ -107,8 +108,22 @@ html, body{
 }
 
 #img_1 {
+    background-image: url(../img/cap1_img_1.png);
+    
+    top: 850px;
+    right: calc(50vw - 350px - 350px - 30px);
+}
+
+#img_2 {
     background-image: url(../img/cap1_img_2.png);
     
-    top: 450px;
-    left: -80px;
+    top: 1850px;
+    left: calc(50vw - 350px - 350px - 30px);
+}
+
+#img_3 {
+    background-image: url(../img/cap1_img_3.png);
+    
+    top: 250px;
+    left: calc(50vw - 350px - 350px - 30px);
 }
