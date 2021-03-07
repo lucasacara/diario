@@ -14,6 +14,8 @@ html, body{
     background-size: contain;
     background-repeat: repeat-y;
     background-position: top;
+    
+    overflow-x: hidden;
 }
 
 .texto{
@@ -21,32 +23,6 @@ html, body{
     color: #5d3f24;
     font-size: 20px;
     letter-spacing: 5px;
-}
-
-#texto_esquerda {
-    position: absolute;
-    
-    width: 30px;
-    height: 1910px;
-    
-    top: 0;
-    left: 24px;
-    
-    writing-mode: vertical-rl;
-    transform: rotateZ(180deg);
-    
-    display: none;
-    
-}
-
-#texto_direita {
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-    writing-mode: vertical-rl;
-    
-    display: none;
 }
 
 #home {
@@ -349,6 +325,7 @@ html, body{
     opacity: 1;
     transition: 0.5s ease;
 }
+    
 
 /* ANIMAÇÕES */
 @keyframes animGirar {
@@ -359,4 +336,187 @@ html, body{
     100%{
         transform: rotate(359deg);
     }
+}
+
+@media only screen and (max-width: 1080px) {
+    #rodape{
+        position: relative;
+
+        width: calc(80vw - 24px);
+        height: auto;
+
+        padding: 12px;
+
+        margin-bottom: 36px;
+        margin-top: 240px;
+
+        font-size: 12px;
+    }  
+}
+
+@media only screen and (max-width: 720px) {
+    .subtitulo {
+        font-size: 42px;
+    }
+
+    .titulo {
+        font-size: 56px;
+    }
+    
+    #titulo_principal{
+        height: 110px;
+        width: 100vw;
+        top: calc(50vh - (110px/2));
+    }
+
+    #subtitulo {
+        padding-left: 28px;
+    }
+
+    #titulo_2 {
+        margin-top: -48px;
+    }
+    
+    .linha {
+        display: none;
+    }
+    
+    #post_1{
+        margin-top: 80vh;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .subtitulo {
+        font-size: 36px;
+    }
+
+    .titulo {
+        font-size: 42px;
+    }
+    
+    #titulo_principal{
+        height: 110px;
+        width: 100vw;
+        top: calc(50vh - (110px/2));
+    }
+
+    #subtitulo {
+        padding-left: 0px;
+    }
+
+    #titulo_2 {
+        margin-top: -36px;
+    }
+    
+    .linha {
+        display: none;
+    }
+    
+    .post{
+        width: 300px;
+    }
+
+    .post .capitulo {
+        top: -44px;
+        right: 0;
+        z-index: 100;
+        
+        font-size: 42px;
+    }
+
+    .post .img {
+        width: 200px;
+        height: 200px;
+
+        margin-left: -85px;
+        margin-top: -70px;
+    }
+
+    .post .titulo{
+        right: 35px;
+        top: 20px;
+    }
+
+    span.s_espacos {
+        display: none;
+    }
+    
+    span.s_quebra {
+        display: block;
+    }
+    
+    .post .botao{
+        width: 230px;
+
+        right: calc((300px - 230px)/2);
+    }
+    
+    .post.invertido .capitulo{
+        left: 0;
+    }
+
+    .post.invertido .img {
+        position: relative;
+
+        margin-left: 120px;   
+    }
+
+    .post.invertido .titulo{
+        left: 35px;
+    }
+
+    .post.invertido .botao{
+        position: absolute;
+
+        right: 0px;
+        left: calc((300px - 230px)/2);
+    }
+
+    .post.aguardando .titulo{
+        display: none;
+    }
+
+    .post.aguardando.invertido .botao{
+        left: 46px;
+    }
+
+    .post.aguardando .botao{
+        width: 150px;
+        right: 24px;
+    }
+    
+    .post.aguardando .img{
+        margin-top: 10px;
+        margin-left: -60px;
+    }
+
+    #post_1{
+        z-index: 501;
+        margin-top: 80vh;
+    }
+
+    #post_2{
+        z-index: 502;
+        margin-top: 120px;
+    }
+    
+    #post_3{
+        z-index: 503;
+        margin-top: 120px;
+    }
+    
+    #rodape{
+        position: relative;
+
+        width: calc(80vw - 24px);
+        height: auto;
+
+        padding: 12px;
+
+        margin-bottom: 36px;
+        margin-top: 240px;
+
+        font-size: 12px;
+    }  
 }
