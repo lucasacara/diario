@@ -40,7 +40,7 @@ html, body{
 
 #box_anim {
     background-color: #fbdd76;
-    width: calc(100vw - 17px);
+    width: 100vw;
     height: 100vh;
     
     position: fixed;
