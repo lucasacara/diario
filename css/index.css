@@ -323,6 +323,16 @@ html, body{
     background-image: url(../img/linha_2.png);
 }
 
+#linha_3 {
+    width: 300px;
+    height: 400px;
+    
+    top: calc(100vh + 1150px);
+    left: calc(50vw + 100px);
+    
+    background-image: url(../img/linha_3.png);
+}
+
 #box_anim {
     background-color: #fbdd76;
     width: 100vw;
