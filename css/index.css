@@ -245,7 +245,7 @@ html, body{
     background-image: url(../img/selo_1.png);
 }
 
-#post_2{
+#post_2 {
     z-index: 502;
     margin-top: 120px;
 }
@@ -255,13 +255,23 @@ html, body{
 }
 
 #post_3{
-    z-index: 502;
+    z-index: 503;
     margin-top: 120px;
 }
 
 #post_3 .img{
-    background-image: url(../img/selo_vazio.png);
+    background-image: url(../img/selo_3.png);
 }
+
+#post_4{
+    z-index: 504;
+    margin-top: 120px;
+}
+
+#post_4 .img{
+    background-image: url(../img/selo_vazio_invertido.png);
+}
+
 
 #rodape{
     position: relative;
@@ -503,6 +513,11 @@ html, body{
     
     #post_3{
         z-index: 503;
+        margin-top: 120px;
+    }
+    
+    #post_4{
+        z-index: 504;
         margin-top: 120px;
     }
     
