@@ -510,6 +510,18 @@ html, body{
         margin-top: 10px;
         margin-left: -60px;
     }
+    
+    .post.aguardando.invertido .botao{
+        width: 150px;
+        right: 24px;
+    }
+    
+    .post.aguardando.invertido .img{
+        margin-top: 10px;
+        
+
+        margin-left: 120px;   
+    }
 
     #post_1{
         z-index: 501;
@@ -524,6 +536,11 @@ html, body{
     #post_3{
         z-index: 503;
         margin-top: 120px;
+    }
+    
+    #post_3 .img {
+        margin-left: -120px;
+        margin-top: -60px;
     }
     
     #post_4{
