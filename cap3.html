@@ -43,14 +43,19 @@
         
     <body>
         <div id="box_anim"></div>
-        <div id="bt_voltar" onclick="voltar()"></div>
+        <div id="bt_voltar" onclick="voltar()">
+            <svg width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#C4C4C4" class="fundo"/>
+                <path d="M21 12.0071L19.9929 11L16 14.9929L12.0071 11L11 12.0071L14.9929 16L11 19.9929L12.0071 21L16 17.0071L19.9929 21L21 19.9929L17.0071 16L21 12.0071Z" fill="black" class="icone"/>
+            </svg>
+        </div>        
         
         <div class="subtitulo">capítulo 3</div>
         <div class="titulo">método ou inspiração?</div>
         
         
         <div class="texto" id="paragrafos">
-            Criatividade, definido no dicionário como inventividade, inteligência e talento para criar - nato ou adquirido -, pode ser compreendida de muitas formas, a depender do seu interesse. Inventar e inovar são alguns dos principais fins da criatividade, quer seja no campo artístico, no científico, esportivo etc.
+            Criatividade, definida no dicionário como inventividade, inteligência e talento para criar - nato ou adquirido -, pode ser compreendida de muitas formas, a depender do seu interesse. Inventar e inovar são alguns dos principais fins da criatividade, quer seja no campo artístico, no científico, esportivo etc.
             <br><br>
             Alguns a entendem como uma qualidade, uma inspiração divina que é definida pela sorte; outros entendem a criatividade como um exercício diários de reimaginar e analisar novas possibilidades; ainda, há quem a defina como o processo de tapar buracos, corrigir processos e fazer do limão, uma nova limonada.
             <br><br>
@@ -62,7 +67,7 @@
             Porém, para <strong>Julie Burstein</strong>, alguns processos em nossa vida são mais categóricos para o processo de criatividade. Além do já dito “prestar atenção”, a escritora defende que é preciso aprender com nossos momento difíceis, se esforçar para ultrapassar as barreiras do que podemos fazer e, por último, se relacionar de uma maneira mais saudável com a perda e os fins.
             <br><br>
             <div class="img_linha">
-                <img src="img/cap3_img_1.jpg" width="400px">
+                <img src="img/cap3_img_1.jpg" class="img">
                 <br>Julie Burstein
             </div>
             <br>
@@ -75,13 +80,13 @@
 
             <br><br>
             <div class="img_linha">
-                <img src="img/linha_div.png" width="500px">
+                <img src="img/linha_div.png" class="img">
             </div>
             
             <br>
             <h1>Criando um animal improvável</h1>
             <div class="img_linha">
-                <img src="img/cap3_img_2.png" width="350px">
+                <img src="img/cap3_img_2.png" class="img">
             </div>
             Este é o <strong>Lagarto Imperial</strong>. Ele mora em regiões de grandiosos palácios, apresentando um porte médio - entre 50 e 80 centímetros -. Por conta disso, costuma ser o animal de estimação preferido dos filhos das rainhas.
             <br>Em volta do seu pescoço, os lagartos imperiais possuem uma grandiosa estrutura circular que os ajudam a filtrar o ar, antes que este chegue aos seus pulmões. Por essa estrutura ser bastante graciosa, essa espécie virou facilmente alvo dos caçadores, que a extraíam de seus corpos para serem usadas como colares.
@@ -99,6 +104,13 @@
         </div>
         
         <div class="texto" id="data_cap">13/03/2021</div>
+        <div class="botao texto" onclick="voltar()">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 1.00714L8.99286 0L5 3.99286L1.00714 0L0 1.00714L3.99286 5L0 8.99286L1.00714 10L5 6.00714L8.99286 10L10 8.99286L6.00714 5L10 1.00714Z" fill="black" class="icone"/>
+            </svg>
+
+            fechar página
+        </div>
     </body>
 </html>
 
@@ -118,7 +130,7 @@
         setTimeout(function(){
             document.getElementById('box_anim').style.opacity = '1';
             setTimeout(function(){
-                document.location.href = 'index.html';
+                document.location.href = 'index.html#Pagina3';
             },500)
         }, 10);
     }

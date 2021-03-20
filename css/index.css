@@ -346,6 +346,10 @@ html, body{
     transition: 0.5s ease;
 }
     
+.anchor {
+    position: absolute;
+    transform: translateY(-35vh);
+}
 
 /* ANIMAÇÕES */
 @keyframes animGirar {

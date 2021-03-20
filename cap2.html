@@ -43,10 +43,15 @@
         
     <body>
         <div id="box_anim"></div>
-        <div id="bt_voltar" onclick="voltar()"></div>
+        <div id="bt_voltar" onclick="voltar()">
+            <svg width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#C4C4C4" class="fundo"/>
+                <path d="M21 12.0071L19.9929 11L16 14.9929L12.0071 11L11 12.0071L14.9929 16L11 19.9929L12.0071 21L16 17.0071L19.9929 21L21 19.9929L17.0071 16L21 12.0071Z" fill="black" class="icone"/>
+            </svg>
+        </div>
         
-        <div class="img" id="img_1"></div>
-        <div class="img" id="img_2"></div>
+        <div class="img_lateral" id="img_1"></div>
+        <div class="img_lateral" id="img_2"></div>
         
         <div class="subtitulo">capítulo 2</div>
         <div class="titulo">o que me bloqueia?</div>
@@ -63,13 +68,13 @@
                 <li>Acender um <strong>incenso</strong> no ambiente desperta meu lado mais intuitivo e criacionista. Prefiro aromas de canela e de alecrim para aflorar a criatividade e ajudar na concentração.</li>
                 <li>Se as ideias não estão vindo, gosto de <strong>dançar</strong>, sozinho mesmo, no meio do ambiente onde estou. Acredito que sou uma pessoa bastante expansiva. Me mexer me ajuda a fazer as ideias fluírem.</li>
             </ul> 
-            <br><br>
+            <br>
             <div class="img_linha">
-                <img src="img/cap2_img_1.jpg" width="500px">
+                <img src="img/cap2_img_1.jpg" class="img">
                 Meu processo criativo em uma imagem.<br>Fonte: @digimundomarketing
             </div>
             
-            <br><br>
+            <br>
             <h1>E quando a criatividade não vem?</h1>
             Embora o processo criativo seja diferente para cada pessoa, o <strong>bloqueio criativo</strong> é algo que aflinge a todos. É quase certo que, em um momento ou outro da vida, todo mundo se deparará com um destes "brancos", que faz com que todas as ideias sumam - ou pareçam ser fracas demais.
             <br><br>
@@ -104,16 +109,16 @@
             </ul>
             <br><br>
             <div class="img_linha">
-                <img src="img/linha_div.png" width="500px">
+                <img src="img/linha_div.png" class="img">
             </div>
             
             <br><br>
             <h1>Atividade:</h1>
-            <i><a href="https://www.youtube.com/watch?v=CEhT2QlRBMo" target="_blank">https://www.youtube.com/watch?v=CEhT2QlRBMo</a> - escolher duas pessoas do vídeo e criar uma história, contando como se conheceram e o futuro delas.</i>
+            <a href="https://www.youtube.com/watch?v=CEhT2QlRBMo" target="_blank">R.E.M. | Imitation Of Life</a> - escolher duas pessoas do vídeo e criar uma história, contando como se conheceram e o futuro delas.
             
             <br><br>
             <div class="img_linha">
-                <img src="img/cap2_img_4.png" width="500px">
+                <img src="img/cap2_img_4.png" class="img">
                 <strong>"O REPÓRTER E A DONA DA FESTA"</strong>
             </div>
             <br>
@@ -131,12 +136,19 @@
             Entrando de mansinho, o câmera man consegue filmar de relance o repórter sendo levado para algum canto da festa. Não sabendo o que estava acontecendo, a equipe de TV resolve acionar a polícia.
             <br><br>
             <div class="img_linha">
-                <img src="img/cap2_img_5.gif" width="300px">
+                <img src="img/cap2_img_5.gif" class="img">
                 <br>Agora, resta saber se o repórter sairá dessa como inocente.
             </div>
         </div>
         
         <div class="texto" id="data_cap">06/03/2021</div>
+        <div class="botao texto" onclick="voltar()">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 1.00714L8.99286 0L5 3.99286L1.00714 0L0 1.00714L3.99286 5L0 8.99286L1.00714 10L5 6.00714L8.99286 10L10 8.99286L6.00714 5L10 1.00714Z" fill="black" class="icone"/>
+            </svg>
+
+            fechar página
+        </div>
     </body>
 </html>
 
@@ -156,7 +168,7 @@
         setTimeout(function(){
             document.getElementById('box_anim').style.opacity = '1';
             setTimeout(function(){
-                document.location.href = 'index.html';
+                document.location.href = 'index.html#Pagina2';
             },500)
         }, 10);
     }
