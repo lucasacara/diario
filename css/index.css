@@ -278,8 +278,18 @@ html, body{
 }
 
 #post_5 .img{
+    background-image: url(../img/selo_5.png);
+}
+
+#post_6{
+    z-index: 506;
+    margin-top: 120px;
+}
+
+#post_6 .img{
     background-image: url(../img/selo_vazio.png);
 }
+
 
 
 #rodape{
@@ -350,6 +360,16 @@ html, body{
     left: calc(50vw - 360px);
     
     background-image: url(../img/linha_4.png);
+}
+
+#linha_5 {
+    width: 270px;
+    height: 400px;
+    
+    top: calc(100vh + 1780px);
+    left: calc(50vw + 180px);
+    
+    background-image: url(../img/linha_1.png);
 }
 
 #box_anim {
@@ -568,6 +588,10 @@ html, body{
     }
     
     #post_5{
+        margin-top: 120px;
+    }
+    
+    #post_6{
         margin-top: 120px;
     }
     
