@@ -281,12 +281,21 @@ html, body{
     background-image: url(../img/selo_5.png);
 }
 
-#post_6{
+#post_6 {
     z-index: 506;
     margin-top: 120px;
 }
 
 #post_6 .img{
+    background-image: url(../img/selo_6.png);
+}
+
+#post_7{
+    z-index: 507;
+    margin-top: 120px;
+}
+
+#post_7 .img{
     background-image: url(../img/selo_vazio.png);
 }
 
@@ -370,6 +379,16 @@ html, body{
     left: calc(50vw + 180px);
     
     background-image: url(../img/linha_1.png);
+}
+
+#linha_6 {
+    width: 300px;
+    height: 400px;
+    
+    top: calc(100vh + 2100px);
+    left: calc(50vw - 360px);
+    
+    background-image: url(../img/linha_2.png);
 }
 
 #box_anim {
@@ -592,6 +611,10 @@ html, body{
     }
     
     #post_6{
+        margin-top: 120px;
+    }
+    
+    #post_7{
         margin-top: 120px;
     }
     
